@@ -11,7 +11,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 255, 0.685);
+    border: 3px solid white;
+}
+.chat-banner{
+    background-image: url();
+    border: 2px solid red;
+    
 }
  .chat-container{
      max-width: 550px;
@@ -41,6 +46,13 @@ body{
     font-size: bold;
 
 }
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%
+  }
 #your-name{
     font-weight: 600;
     font-style: italic;
