@@ -69,3 +69,5 @@ displayMsg.appendChild(msgDiv)
 
 
 //After all Deploay Heroku
+//create an app name on heroku, and follow the command line  
+//incase you encounter any problem on the vscode terminal as regards the heroku login open external terminal and heroku login if it still persist turn off data and refresh the terminal 

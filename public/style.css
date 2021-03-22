@@ -11,6 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 255, 0.685);
 }
  .chat-container{
      max-width: 550px;
