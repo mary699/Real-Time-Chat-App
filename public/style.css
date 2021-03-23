@@ -1,41 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    min-height: 100vh;
+body{ 
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid white;
+    background-color: #03506f;
 }
+
+
 .chat-banner{
-    background-image: url();
-    border: 2px solid red;
-    
+    width: 50%;
+}
+.chat-banner p{
+    color: white;
+    font-size: 38px;
+    position: absolute;
+    top: 40px;
+    letter-spacing: 3px;
+    font-family: Lobster;
+
+}
+
+.chat-banner p span{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    letter-spacing: 3px;
+    font-family: Lobster;
+}
+.text1{
+    display: none;
+}
+
+.u{
+    margin-top: 50px;
+}
+
+
+.chat-banner img{
+    /* border: 2px solid red; */
 }
  .chat-container{
-     max-width: 550px;
+     max-width: 450px;
      width: 100%;
-     border-radius: 10px;
-     box-shadow: 2px 9px 25px black;
+     border-radius: 15px;
+     box-shadow: 2px 9px 25px rgba(0, 0, 0, 0.623);
      overflow: hidden;
      border: 1px solid grey;
-     background:darkblue;
+     background:#03506f;
+     height: 82vh;
+     border-radius: 20px;
  }
 .chat-header{
-    min-height: 30px;
+    min-height: 20px;
     overflow: hidden;
-    background: rgb(230, 228, 228);
+    background-color: white;
     color: darkblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(66, 66, 70);
+    
 }
 
 .chat-header .logo{
@@ -44,15 +77,33 @@ body{
     margin-left: 20px;
     color: darkblue;
     font-size: bold;
-
 }
 
 #circle {
-    width: 100px;
-    height: 100px;
+    width: 12px;
+    height: 12px;
     background: red;
-    border-radius: 50%
+    border-radius: 50%;
+    border: 1px soild black;
+    margin-right: 5px;
   }
+  #circle3 {
+    width: 12px;
+    height: 12px;
+    background: yellow;
+    border-radius: 50%;
+    border: 1px soild black;
+    margin-right: 5px;
+  }
+  #circle2 {
+    width: 12px;
+    height: 12px;
+    background:green;
+    border-radius: 50%;
+    border: 1px soild black;
+    margin-right: 5px;
+  }
+
 #your-name{
     font-weight: 600;
     font-style: italic;
@@ -67,7 +118,7 @@ body{
     opacity: 0.6;
     font-size: bold;
     color: black;
-
+    font-style: normal;
 }
 .chat-section{
     padding: 20px;
@@ -80,13 +131,16 @@ body{
 
 .chat-content{
     width: 100%;
-    height: 450px;
+    height: 400px;
     background: white;
     overflow-y: auto;
-    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.74);
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.767);
     padding: 0 10px;
-    border-radius: 3px;
-    scroll-behavior:none;
+    border-radius: 20px;
+    scroll-behavior: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
 }
 
 .chat-container .message{
@@ -147,9 +201,12 @@ body{
     flex: 4;
     height: 40px;
     outline: none;
-    border: 1px solid grey;
+    border: 1px solid skyblue;
     padding: 0px 10px;
-    border-radius: 3px;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
 }
 .msg-tex button{
     flex: 1;
@@ -160,4 +217,69 @@ body{
 /* This helps you for the scroll bar */
 ::-webkit-scrollbar{
     display: none;
+}
+#btn-send{
+
+     color:#0853b6 ;
+}
+footer{
+    position: absolute;
+    top: 100vh;
+    bottom: 0px;
+    height: 5vh;
+    background: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 900px) {
+    body {
+    display: block;   
+ }
+ .u{
+     display: none;
+ }
+
+  .chat-container{
+      width: 100%;
+      display: block;
+      margin-left: 0px;
+      margin: auto;
+      margin-top: 150px;
+      height: 90vh;
+  }
+  
+    .text{
+
+        display: none;
+      
+    }
+    .text1{
+
+        display: block;
+      
+    }
+
+    
+        }
+        .chat-banner{
+            text-align:center ;
+        }
+
+    footer{
+        position: absolute;
+        top: 130vh;
+        bottom: 0px;
+        height: 5vh;
+        background: #ffffff;
+        width: 100%;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+    }
+   
 }
