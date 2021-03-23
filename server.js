@@ -13,7 +13,8 @@ io.on('connection', socket=>{
     console.log('Connection Successful')
 
     socket.on('sendMessage', msg => {
-        console.log(msg)
+        // console.log(msg)
+        socket.broadcast.emit('sendToAll', msg)
     })
 })
 

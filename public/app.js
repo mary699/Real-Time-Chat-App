@@ -53,7 +53,7 @@ const display = (msg, type) => {
     msgDiv.classList.add(className, 'message-row')
     let times = new Date().toLocaleTimeString()
 
-    let innerText = `                                 <div class="message-title">
+    let innerText = `   <div class="message-title">
     😍<span>${msg.user}</span>
 </div>
 <div class="message-text">
